@@ -52,7 +52,7 @@ class Exercice_selection_card extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  SizedBox(width: 21,),
+                  SizedBox(width: 10,),
                   IconButton(onPressed:
                     enleverRepetition, icon: Icon(Icons.remove)),
                   Text(
@@ -61,13 +61,32 @@ class Exercice_selection_card extends StatelessWidget {
                   IconButton(onPressed:
                     ajouterRepetition, icon: Icon(Icons.add)),
 
-                  SizedBox(width: 91,),
+                  SizedBox(width: 10,),
 
+              ElevatedButton(
+                onPressed: (){
+                  //TO DO
+                  // Ajouter la fonction add to selected workout;
+                } ,
+                child: Center(
+                    child: Text("Add", style: TextStyle(fontSize: 18),)
+                ),
+                style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                    primary: Colors.green[400],
+                    onPrimary: Colors.black
+                ),
+              ) ,
+                  SizedBox(width: 4,),
                   IconButton(onPressed:
                     enleverPoids, icon: Icon(Icons.remove)),
-                  Text(
-                      '${exercice.poids}'
+
+                  SizedBox( width: 40,
+                    child: TextFormField(decoration: const InputDecoration(border:
+                    UnderlineInputBorder(),labelText: 'Enter your username'),keyboardType: TextInputType.number,),
                   ),
+
+
                   IconButton(onPressed: ajouterPoids, icon: Icon(Icons.add)),
 
                 ],
