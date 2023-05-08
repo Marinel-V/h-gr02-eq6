@@ -1,0 +1,4 @@
+#Thu May 04 23:07:53 EDT 2023
+base.0=C\:\\Users\\Marinel\\Documents\\GitHub\\h23-gr02-eq6-WORKOUT_TRACKER\\workout_tracker\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
