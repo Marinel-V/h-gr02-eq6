@@ -49,6 +49,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '431981162280',
     projectId: 'studentproject-3eb54',
     authDomain: 'studentproject-3eb54.firebaseapp.com',
+    databaseURL: 'https://studentproject-3eb54-default-rtdb.firebaseio.com',
     storageBucket: 'studentproject-3eb54.appspot.com',
     measurementId: 'G-PN4M0G585L',
   );
@@ -58,6 +59,7 @@ class DefaultFirebaseOptions {
     appId: '1:431981162280:android:172637e66bfa9b9ec92a1d',
     messagingSenderId: '431981162280',
     projectId: 'studentproject-3eb54',
+    databaseURL: 'https://studentproject-3eb54-default-rtdb.firebaseio.com',
     storageBucket: 'studentproject-3eb54.appspot.com',
   );
 
@@ -66,6 +68,7 @@ class DefaultFirebaseOptions {
     appId: '1:431981162280:ios:6115f7aa95976bf3c92a1d',
     messagingSenderId: '431981162280',
     projectId: 'studentproject-3eb54',
+    databaseURL: 'https://studentproject-3eb54-default-rtdb.firebaseio.com',
     storageBucket: 'studentproject-3eb54.appspot.com',
     iosClientId: '431981162280-qrgtdonc2tgo2e9cste739jh0tfm1nev.apps.googleusercontent.com',
     iosBundleId: 'com.example.untitled',
@@ -76,6 +79,7 @@ class DefaultFirebaseOptions {
     appId: '1:431981162280:ios:6115f7aa95976bf3c92a1d',
     messagingSenderId: '431981162280',
     projectId: 'studentproject-3eb54',
+    databaseURL: 'https://studentproject-3eb54-default-rtdb.firebaseio.com',
     storageBucket: 'studentproject-3eb54.appspot.com',
     iosClientId: '431981162280-qrgtdonc2tgo2e9cste739jh0tfm1nev.apps.googleusercontent.com',
     iosBundleId: 'com.example.untitled',
