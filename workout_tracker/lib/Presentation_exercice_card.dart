@@ -7,6 +7,7 @@ class Exercice_selection_card extends StatelessWidget {
   final Function() update;
   Exercice_selection_card({required this.exercice, required this.update});
 
+  var txt = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +84,9 @@ class Exercice_selection_card extends StatelessWidget {
 
                   SizedBox( width: 40,
                     child: TextFormField(decoration: const InputDecoration(border:
-                    UnderlineInputBorder(),labelText: 'Enter your username'),keyboardType: TextInputType.number,),
+                    UnderlineInputBorder(),labelText: '' ),keyboardType: TextInputType.number, controller: txt, onFieldSubmitted: (String submit){
+                      txt.text = submit;
+                    },),
                   ),
 
 
