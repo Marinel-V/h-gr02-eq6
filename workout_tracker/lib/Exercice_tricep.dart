@@ -13,7 +13,7 @@ class _TricepState extends State<Tricep> {
   List<Exercice> exercices_dos = [
     Exercice(nom: 'Cable Overhead Tricep Extension'),
     Exercice(nom: 'Close Grip Barbell Bench Press'),
-    Exercice(nom: 'Dumbbell Overhead Triceps Extension'),
+    Exercice(nom: 'Dumbbell Overhead Tricep Extension'),
     Exercice(nom: 'Ez-Bar Skullcrusher',),
     Exercice(nom: 'Lying Triceps Extension'),
     Exercice(nom: 'Parallel Bar Triceps Dip'),
