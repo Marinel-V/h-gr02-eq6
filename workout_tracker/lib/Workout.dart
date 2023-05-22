@@ -2,9 +2,10 @@ import 'Exercice.dart';
 
 class Workout{
   String nom;
-  List<Exercice> entrainement;
+  DateTime creationDate= DateTime.now();
+  List<Exercice> entrainement = [];
 
-  Workout(this.nom, this.entrainement);
+  Workout(this.nom);
 
   void ajouter_exercice(Exercice exercice){
     entrainement.add(exercice);

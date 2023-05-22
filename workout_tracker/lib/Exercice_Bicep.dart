@@ -24,6 +24,7 @@ class _BicepState extends State<Bicep> {
     Exercice(nom: 'Gymnast Pull'),
   ];
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,10 +38,14 @@ class _BicepState extends State<Bicep> {
             update: (){
               setState(() {
               });
+
             },
           )).toList(),
         )
 
     );
   }
+
+
+
 }

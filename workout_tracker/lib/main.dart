@@ -6,6 +6,7 @@ import 'package:workout_tracker/Exercice_tricep.dart';
 import 'Home.dart';
 import 'Exercice_dos.dart';
 import 'Exercice_Bicep.dart';
+import 'Workout.dart';
 
 void main() {runApp(MaterialApp(
   initialRoute:'/home' ,

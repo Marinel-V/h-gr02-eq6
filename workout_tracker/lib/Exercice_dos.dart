@@ -40,7 +40,11 @@ class _DosState extends State<Dos> {
             },
           )).toList(),
         )
-
     );
+  }
+
+  void addExercice (Exercice exerciceAjouter){
+    // Ajouter le workout dans cette fonction et ensuite faire le add fonction. Trouver comment call le object dans cette class
+
   }
 }

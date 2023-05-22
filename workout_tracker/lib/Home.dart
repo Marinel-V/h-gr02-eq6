@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Workout.dart';
 import 'Exercice.dart';
 import 'Presentation_exercice_card.dart';
 
@@ -10,6 +11,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  Workout currentworkout = Workout ('Current Workout');
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +35,7 @@ class _HomeState extends State<Home> {
                     AspectRatio(aspectRatio: 2.5/1,
                     child: ElevatedButton(
                       onPressed: (){
-                        Navigator.pushNamed(context, '/exercice_dos');
+                        Navigator.pushNamed(context, '/exercice_dos', arguments: currentworkout);
                       } ,
                       child: Center(
                           child: Text("Dos", style: TextStyle(fontSize: 19),)
@@ -50,7 +53,7 @@ class _HomeState extends State<Home> {
                     AspectRatio(aspectRatio: 2.5/1,
                       child: ElevatedButton(
                         onPressed: (){
-                          Navigator.pushNamed(context, '/exercice_bicep');
+                          Navigator.pushNamed(context, '/exercice_bicep', arguments: currentworkout);
                         } ,
                         child: Center(
                             child: Text("Bicep", style: TextStyle(fontSize: 19),)
@@ -68,7 +71,7 @@ class _HomeState extends State<Home> {
                     AspectRatio(aspectRatio: 2.5/1,
                       child: ElevatedButton(
                         onPressed: (){
-                          Navigator.pushNamed(context, '/exercice_tricep');
+                          Navigator.pushNamed(context, '/exercice_tricep', arguments: currentworkout);
                         } ,
                         child: Center(
                             child: Text("Tricep", style: TextStyle(fontSize: 19),)
@@ -86,7 +89,7 @@ class _HomeState extends State<Home> {
                     AspectRatio(aspectRatio: 2.5/1,
                       child: ElevatedButton(
                         onPressed: (){
-                          Navigator.pushNamed(context, '/exercice_poitrine');
+                          Navigator.pushNamed(context, '/exercice_poitrine', arguments: currentworkout);
                         } ,
                         child: Center(
                             child: Text("Poitrine", style: TextStyle(fontSize: 19),)
@@ -104,7 +107,7 @@ class _HomeState extends State<Home> {
                     AspectRatio(aspectRatio: 2.5/1,
                       child: ElevatedButton(
                         onPressed: (){
-                          Navigator.pushNamed(context, '/exercice_epaules');
+                          Navigator.pushNamed(context, '/exercice_epaules', arguments: currentworkout);
                         } ,
                         child: Center(
                             child: Text("Épaules", style: TextStyle(fontSize: 19),)
@@ -122,7 +125,7 @@ class _HomeState extends State<Home> {
                     AspectRatio(aspectRatio: 2.5/1,
                       child: ElevatedButton(
                         onPressed: (){
-                          Navigator.pushNamed(context, '/exercice_jambes');
+                          Navigator.pushNamed(context, '/exercice_jambes', arguments: currentworkout);
                         } ,
                         child: Center(
                             child: Text("Jambes", style: TextStyle(fontSize: 19),)
@@ -140,7 +143,6 @@ class _HomeState extends State<Home> {
             ],
           )
         )
-
       )
     );
   }
