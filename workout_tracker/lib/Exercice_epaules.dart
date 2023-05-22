@@ -11,17 +11,17 @@ class Dos extends StatefulWidget {
 
 class _DosState extends State<Dos> {
   List<Exercice> exercices_dos = [
-    Exercice(nom: 'Pull-Up'),
-    Exercice(nom: 'Chin-Up'),
-    Exercice(nom: 'Lat-Pulldown'),
-    Exercice(nom: 'Barbell-Row',),
-    Exercice(nom: 'T-Bar Row'),
-    Exercice(nom: 'Seated Cable Row'),
-    Exercice(nom: 'Deadlift'),
-    Exercice(nom: 'Pull-Over'),
-    Exercice(nom: 'Rack-Pull'),
-    Exercice(nom: 'Dumbell-Shrug'),
-    Exercice(nom: 'Barbell-Shrug'),
+    Exercice(nom: 'Arnold Dumbbell Press'),
+    Exercice(nom: 'Cable Face Pull'),
+    Exercice(nom: 'Front Dumbbell Raise'),
+    Exercice(nom: 'Lateral Dumbbell Raise',),
+    Exercice(nom: 'Lateral Machine Raise'),
+    Exercice(nom: 'Log Press'),
+    Exercice(nom: 'Overhead Press'),
+    Exercice(nom: 'Rear Delt Dumbell Raise'),
+    Exercice(nom: 'Seated Dumbbell Lateral Raise'),
+    Exercice(nom: 'Seated Dumbbell Press'),
+    Exercice(nom: 'Smith Machine Overhead Press'),
   ];
 
   @override
