@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Exercice.dart';
 import 'Presentation_exercice_card.dart';
+import 'Workout.dart';
 
 class Poitrine extends StatefulWidget {
   const Poitrine({Key? key}) : super(key: key);
@@ -34,6 +35,10 @@ class _PoitrineState extends State<Poitrine> {
             update: (){
               setState(() {
               });
+            },
+            ajouter: (){
+              final currentWorkout = ModalRoute.of(context)!.settings.arguments as Workout;
+              currentWorkout.ajouter_exercice(exercice);
             },
           )).toList(),
         )

@@ -39,6 +39,10 @@ class _JambesState extends State<Jambes> {
               setState(() {
               });
             },
+            ajouter: (){
+              final currentWorkout = ModalRoute.of(context)!.settings.arguments as Workout;
+              currentWorkout.ajouter_exercice(exercice);
+            },
           )).toList(),
         )
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Exercice.dart';
 import 'Presentation_exercice_card.dart';
+import 'Workout.dart';
 
 class Epaules extends StatefulWidget {
   const Epaules({Key? key}) : super(key: key);
@@ -37,6 +38,10 @@ class _EpaulesState extends State<Epaules> {
             update: (){
               setState(() {
               });
+            },
+            ajouter: (){
+              final currentWorkout = ModalRoute.of(context)!.settings.arguments as Workout;
+              currentWorkout.ajouter_exercice(exercice);
             },
           )).toList(),
         )

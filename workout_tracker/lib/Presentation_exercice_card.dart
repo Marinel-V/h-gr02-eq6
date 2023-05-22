@@ -5,7 +5,9 @@ class Exercice_selection_card extends StatelessWidget {
 
   final Exercice exercice;
   final Function() update;
-  Exercice_selection_card({required this.exercice, required this.update});
+  final Function() ajouter;
+
+  Exercice_selection_card({required this.exercice, required this.update, required this.ajouter});
 
   var txt = TextEditingController();
 

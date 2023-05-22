@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Exercice.dart';
 import 'Presentation_exercice_card.dart';
+import 'Workout.dart';
 
 class Bicep extends StatefulWidget {
   const Bicep({Key? key}) : super(key: key);
@@ -38,7 +39,10 @@ class _BicepState extends State<Bicep> {
             update: (){
               setState(() {
               });
-
+            },
+            ajouter: (){
+              final currentWorkout = ModalRoute.of(context)!.settings.arguments as Workout;
+              currentWorkout.ajouter_exercice(exercice);
             },
           )).toList(),
         )

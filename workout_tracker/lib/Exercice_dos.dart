@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Exercice.dart';
 import 'Presentation_exercice_card.dart';
+import 'Workout.dart';
 
 class Dos extends StatefulWidget {
   const Dos({Key? key}) : super(key: key);
@@ -37,14 +38,12 @@ class _DosState extends State<Dos> {
             update: (){
               setState(() {
               });
+            }, ajouter: (){
+              final currentWorkout = ModalRoute.of(context)!.settings.arguments as Workout;
+              currentWorkout.ajouter_exercice(exercice);
             },
           )).toList(),
         )
     );
-  }
-
-  void addExercice (Exercice exerciceAjouter){
-    // Ajouter le workout dans cette fonction et ensuite faire le add fonction. Trouver comment call le object dans cette class
-
   }
 }
