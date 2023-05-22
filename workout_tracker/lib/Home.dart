@@ -67,7 +67,9 @@ class _HomeState extends State<Home> {
 
                     AspectRatio(aspectRatio: 2.5/1,
                       child: ElevatedButton(
-                        onPressed: (){} ,
+                        onPressed: (){
+
+                        } ,
                         child: Center(
                             child: Text("Tricep", style: TextStyle(fontSize: 19),)
                         ),
@@ -83,7 +85,9 @@ class _HomeState extends State<Home> {
 
                     AspectRatio(aspectRatio: 2.5/1,
                       child: ElevatedButton(
-                        onPressed: (){} ,
+                        onPressed: (){
+
+                        } ,
                         child: Center(
                             child: Text("Poitrine", style: TextStyle(fontSize: 19),)
                         ),
@@ -99,7 +103,9 @@ class _HomeState extends State<Home> {
 
                     AspectRatio(aspectRatio: 2.5/1,
                       child: ElevatedButton(
-                        onPressed: (){} ,
+                        onPressed: (){
+
+                        } ,
                         child: Center(
                             child: Text("Épaules", style: TextStyle(fontSize: 19),)
                         ),
@@ -115,7 +121,9 @@ class _HomeState extends State<Home> {
 
                     AspectRatio(aspectRatio: 2.5/1,
                       child: ElevatedButton(
-                        onPressed: (){} ,
+                        onPressed: (){
+
+                        } ,
                         child: Center(
                             child: Text("Jambes", style: TextStyle(fontSize: 19),)
                         ),

@@ -2,7 +2,7 @@ class Exercice {
 
   String nom;
   int repetition =0;
-  double poids =0;
+  int poids =0;
 
   Exercice({required this.nom});
 

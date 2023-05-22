@@ -14,7 +14,7 @@ class Exercice_selection_card extends StatelessWidget {
     return Card(
         margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
         child : Padding(
-          padding: const EdgeInsets.all(12.0),
+          padding: const EdgeInsets.all(5.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
@@ -38,7 +38,7 @@ class Exercice_selection_card extends StatelessWidget {
                           fontWeight: FontWeight.w500
                       )
                   ),
-                  SizedBox(width: 141.0,),
+                  SizedBox(width: 157.0,),
                   Text(
                     'Poids',
                       style: TextStyle(
@@ -53,7 +53,7 @@ class Exercice_selection_card extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  SizedBox(width: 10,),
+                  SizedBox(width: 20,),
                   IconButton(onPressed:
                     enleverRepetition, icon: Icon(Icons.remove)),
                   Text(
@@ -61,8 +61,7 @@ class Exercice_selection_card extends StatelessWidget {
                   ),
                   IconButton(onPressed:
                     ajouterRepetition, icon: Icon(Icons.add)),
-
-                  SizedBox(width: 10,),
+                  SizedBox(width: 30,),
 
               ElevatedButton(
                 onPressed: (){
@@ -78,19 +77,16 @@ class Exercice_selection_card extends StatelessWidget {
                     onPrimary: Colors.black
                 ),
               ) ,
-                  SizedBox(width: 4,),
+                  SizedBox(width: 18,),
+
                   IconButton(onPressed:
-                    enleverPoids, icon: Icon(Icons.remove)),
-
-                  SizedBox( width: 40,
-                    child: TextFormField(decoration: const InputDecoration(border:
-                    UnderlineInputBorder(),labelText: '' ),keyboardType: TextInputType.number, controller: txt, onFieldSubmitted: (String submit){
-                      txt.text = submit;
-                    },),
+                  enleverPoids, icon: Icon(Icons.remove)),
+                  Text(
+                      '${exercice.poids}'
                   ),
+                  IconButton(onPressed:
+                  ajouterPoids, icon: Icon(Icons.add)),
 
-
-                  IconButton(onPressed: ajouterPoids, icon: Icon(Icons.add)),
 
                 ],
               )
