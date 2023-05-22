@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'Exercice.dart';
 import 'Presentation_exercice_card.dart';
 
-class Dos extends StatefulWidget {
-  const Dos({Key? key}) : super(key: key);
+class Poitrine extends StatefulWidget {
+  const Poitrine({Key? key}) : super(key: key);
 
   @override
-  State<Dos> createState() => _DosState();
+  State<Poitrine> createState() => _PoitrineState();
 }
 
-class _DosState extends State<Dos> {
+class _PoitrineState extends State<Poitrine> {
   List<Exercice> exercices_dos = [
     Exercice(nom: 'Cable Crossover'),
     Exercice(nom: 'Decline Barbell Bench Press'),
